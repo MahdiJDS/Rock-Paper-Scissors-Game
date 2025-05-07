@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Html/CSS/gameofSKG.css">
+    <title>Game of SKG</title>
+</head>
+<body>  
+  
+<section>
+    <div class="contactGame">
+        <h1>Game of SKG</h1>
+        <h2>you'r now play game for free time</h2>
+
+        <h1><---choise here! ---></h1> 
+            <div class="btnALL">
+            <button class="btn">sang</button>
+            <button class="btn">kagaz</button>
+            <button class="btn">geychi</button> 
+            </div>
+    <h1>computer choises</h1>
+    <div class="btnALLC">
+        
+        <button class="btnC hidden">snag</button>
+        <button class="btnC hidden">kagaz</button>
+        <button class="btnC hidden">geychi</button>
+    </div>
+    <button class="Refresh">Refresh</button>
+    
+    <div class="contactPoint">
+        <h2 id="computerPoint">user Point</h2>
+        <h2 id="userPoint">computer Point</h2>
+        <p class="userWin"> 0 </p>
+        <p class="computerWin"> 0 </p>
+        <p class="loding">loding game ...</p>
+    </div>
+    <div>
+      
+    </div>
+        
+
+
+
+    </div>
+</section>
+<script src="/Html/JavaScript/gameofSKG.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازی حدس عدد</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+        }
+        .game-container {
+            text-align: center;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .input-group {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        input[type="number"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 80px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>بازی حدس عدد</h1>
+        <p>یک عدد بین ۱ تا ۱۰۰ حدس بزنید:</p>
+        <div class="input-group">
+            <input type="number" id="guessInput" min="1" max="100" placeholder="عدد شما">
+            <button onclick="checkGuess()">حدس بزن</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        // تولید عدد تصادفی بین ۱ تا ۱۰۰
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        function checkGuess() {
+            const guessInput = document.getElementById("guessInput");
+            const userGuess = Number(guessInput.value);
+            const resultElement = document.getElementById("result");
+
+            if (!userGuess || userGuess < 1 || userGuess > 100) {
+                resultElement.innerText = "لطفاً یک عدد معتبر بین ۱ تا ۱۰۰ وارد کنید!";
+                return;
+            }
+
+            attempts++;
+
+            if (userGuess === randomNumber) {
+                resultElement.innerText = `تبریک! شما عدد ${userGuess} را در ${attempts} تلاش حدس زدید.`;
+                resultElement.style.color = "green";
+            } else if (userGuess < randomNumber) {
+                resultElement.innerText = "عدد شما کمتر از عدد مخفی است. دوباره تلاش کنید!";
+                resultElement.style.color = "#333";
+            } else {
+                resultElement.innerText = "عدد شما بیشتر از عدد مخفی است. دوباره تلاش کنید!";
+                resultElement.style.color = "#333";
+            }
+
+            guessInput.value = "";
+            guessInput.focus();
+        }
+    </script>
+</body>
+</html> -->
